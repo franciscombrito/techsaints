@@ -24,3 +24,80 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.sticky-buttons {
+  position: fixed;
+  top: 45%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.sticky-button {
+  background: green;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+  height: 48px;
+  width: 48px;
+  border-radius: 8px 0 0 8px; /* Rounded only on left */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  padding: 0;
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/* Button text default hidden */
+.button-text {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+  margin-left: 0.5rem;
+}
+
+/* On hover: expand and show text */
+.sticky-button:hover {
+  width: 180px;
+}
+
+.sticky-button:hover .button-text {
+  opacity: 1;
+}
+
+/* Specific button colors */
+.register {
+  background-color: #10B981;
+}
+
+.contest {
+  background-color: #EF4444;
+}
+
+/* Optional hover color */
+.register:hover {
+  background-color: #0f766e;
+}
+
+.contest:hover {
+  background-color: #dc2626;
+}

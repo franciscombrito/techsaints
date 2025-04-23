@@ -4,12 +4,14 @@ import Head from 'next/head';
 import Image from 'next/image';
 import 'keen-slider/keen-slider.min.css';
 import { useEffect, useRef } from 'react';
+import { FaUserPlus, FaRobot } from 'react-icons/fa';
 
 const images = ['about1.jpeg', 'about2.jpeg', 'about3.jpg', 'about4.jpg','about5.jpg', 'about6.jpg', 'about11.jpg', 'about8.jpg', 'about9.jpg', 'about10.jpg', 'about12.jpg'];
 
 export default function Home() {
 
   const scrollRef = useRef<HTMLDivElement>(null);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,8 +52,20 @@ export default function Home() {
     priority
     className="object-cover z-0"
   />
-
-  {/* <div className="absolute inset-0 bg-black/20 z-10"></div> */}
+    <div className="sticky-buttons">
+      <a href="#register" className="sticky-button register">
+        <div className="icon-wrapper">
+          <FaUserPlus className="icon" />
+        </div>
+        <span className="button-text">Register</span>
+      </a>
+      <a href="#contest" className="sticky-button contest">
+        <div className="icon-wrapper">
+          <FaRobot className="icon" />
+        </div>
+        <span className="button-text">June AI Contest</span>
+      </a>
+    </div>
 
   <div className="absolute top-[73vh] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 px-4">
     <h1 className="text-4xl sm:text-6xl font-extrabold text-center">
@@ -62,8 +76,6 @@ export default function Home() {
     <p className="mt-4 text-lg md:text-xl">AT THE INTERSECTION OF CULTURE AND TECHNOLOGY</p>
     <span className="text-xl mt-3 block">
       <a href="#about" className="text-white font-semibold mr-2">ABOUT</a>
-      ||
-      <a href="#contest" className="text-white font-semibold ml-2">AI </a> 
       ||
       <a href="#agenda" className="text-white font-semibold ml-2">AGENDA</a>
     </span>
@@ -78,93 +90,207 @@ export default function Home() {
   </div>
 </section>
 <section id="about" className="w-full pt-20 bg-white text-gray-900">
-      <div className="max-w-6xl mx-auto px-6 md:flex md:items-center md:justify-between md:gap-x-16">
+  <div className="max-w-6xl mx-auto px-6 md:flex md:items-center md:justify-between md:gap-x-16">
 
-        {/* Text content */}
-        <div className="md:w-3/5 mb-10 md:mb-0">
-          <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
-            At the Intersection of Culture and Technology
-          </h2>
-          <p className="mb-4">
-            Welcome to the <strong>third edition</strong> of <strong>Tech & Saints Week</strong>, Valtech Portugal’s unique celebration of what makes us who we are — passionate about technology, proud of our culture, and eager to share both.
-          </p>
-          <p className="mb-4">
-            This event brings together our community to <strong>share knowledge</strong>, <strong>showcase our work</strong>, and <strong>host top-tier speakers</strong> from around the tech world. But it’s more than just a event — it’s a celebration.
-          </p>
-          <p className="mb-4">
-            Held in <strong>June</strong>, during Lisbon’s most vibrant season, Tech & Saints Week pays tribute to the beloved <strong>Santos Populares</strong> — Portugal’s iconic street festival tradition. For an entire month, the city comes alive with <em>music, lights, grilled sardines, colorful garlands</em>, and the unmistakable energy of community spirit.
-          </p>
-          <p>
-            From insightful talks to festive moments, this is where <strong>innovation meets tradition</strong>, and where <strong>creativity, collaboration, and culture intersect</strong>.
-          </p>
-        </div>
+    {/* Text content */}
+    <div className="md:w-3/5 mb-10 md:mb-0">
+      <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
+        At the Intersection of Culture and Technology
+      </h2>
+      <p className="mb-4">
+        Welcome to the <strong>third edition</strong> of <strong>Tech & Saints Week</strong>, Valtech Portugal’s unique celebration of what makes us who we are — passionate about technology, proud of our culture, and eager to share both.
+      </p>
+      <p className="mb-4">
+        This event brings together our community to <strong>share knowledge</strong>, <strong>showcase our work</strong>, and <strong>host top-tier speakers</strong> from around the tech world. But it’s more than just a event — it’s a celebration.
+      </p>
+      <p className="mb-4">
+        Held in <strong>June</strong>, during Lisbon’s most vibrant season, Tech & Saints Week pays tribute to the beloved <strong>Santos Populares</strong> — Portugal’s iconic street festival tradition. For an entire month, the city comes alive with <em>music, lights, grilled sardines, colorful garlands</em>, and the unmistakable energy of community spirit.
+      </p>
+      <p className="mb-8">
+        From insightful talks to festive moments, this is where <strong>innovation meets tradition</strong>, and where <strong>creativity, collaboration, and culture intersect</strong>.
+      </p>
 
-        {/* Static Image */}
-        <div className="md:w-2/5 flex justify-center">
-          <div className="w-full aspect-square relative rounded-3xl overflow-hidden shadow-xl">
-            <Image
-              src="/about1.jpeg"
-              alt="Santos Populares festival in Lisbon"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+  <a
+    href="#register"
+    className="bg-[#10B981] hover:bg-[#0f766e] text-white font-bold py-3 px-6 rounded-full transition-all duration-300 w-full sm:w-auto text-center"
+  >
+    Register Now
+  </a>
 
+  <a
+    href="#lucky-circuit"
+    className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-3 px-6 rounded-full transition-all w-full sm:w-auto text-center"
+  >
+    The Saints Wheel of Luck
+  </a>
+
+  <a
+    href="#contest"
+    className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 w-full sm:w-auto text-center"
+  >
+    June AI Contest
+  </a>
+</div>
+    </div>
+
+    {/* Static Image */}
+    <div className="md:w-2/5 flex justify-center">
+      <div className="w-full aspect-square relative rounded-3xl overflow-hidden shadow-xl">
+        <Image
+          src="/about1.jpeg"
+          alt="Santos Populares festival in Lisbon"
+          fill
+          className="object-cover"
+        />
       </div>
-      <div className="relative w-full flex opacity-20 h-48">
-        <div className="w-[600px] relative h-full">
-          <Image
-            src="/skyline.png"
-            alt="Left Lisbon skyline"
-            fill
-            className="object-cover"
-          />
+    </div>
+
+  </div>
+
+  {/* Skyline Decoration */}
+  <div className="relative w-full flex opacity-20 h-48">
+    <div className="w-[600px] relative h-full">
+      <Image
+        src="/skyline.png"
+        alt="Left Lisbon skyline"
+        fill
+        className="object-cover"
+      />
+    </div>
+  </div>
+</section>
+
+<section id="agenda" className="py-20 px-6 text-center bg-[#0a192f]"> 
+  <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+
+    {/* Day Card */}
+    <div className="bg-[#112240] p-8 rounded-2xl flex flex-col">
+      <div className="mb-6">
+        <h3 className="text-2xl font-bold text-yellow-400 mb-2">TECH & DEI</h3>
+        <p className="text-sm text-gray-300">June 24</p>
+      </div>
+      <div className="flex-1 flex flex-col justify-center space-y-4 text-left text-gray-100">
+      <div>
+          <p className="font-semibold">12.00- 12.15</p>
+          <p className="text-sm text-gray-300">Tech & Saints Week <strong>Kick-off</strong></p>
+        </div>
+        <div>
+          <p className="font-semibold">12.15 - 13.30</p>
+          <p className="text-sm text-gray-300"><strong>Cape Verdian Lunch</strong> with Austelino Correia, Presidente Assembleia Nacional de Cabo Verde</p>
+        </div>
+        <div>
+          <p className="font-semibold">13.30 - 14:30</p>
+          <p className="text-sm text-gray-300">Craft Circles United: <strong>Accessibility</strong></p>
+        </div>
+        <div>
+          <p className="font-semibold">17:30 - 20:00 🌍</p>
+          <p className="text-sm text-gray-300"><strong>International Dinner & Live Music</strong>: Bring a dish from your country, share traditions, and celebrate diversity with us!</p>
         </div>
       </div>
-    </section>
+    </div>
 
-      {/* Agenda Section */}
-      <section id="agenda" className="py-16 px-4 text-center">
-        <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
-          <div className="bg-[#112240] p-6 rounded-xl">
-              <h3 className="text-xl font-bold mb-2">TECH & DEI</h3>
-              <p className="text-sm text-gray-300 mb-4">June 24</p>
-              <div className="space-y-2">
-                <p>12:00 Event Title</p>
-                <p>00:00 Event Title</p>
-              </div>
-            </div>
-            <div className="bg-[#112240] p-6 rounded-xl">
-              <h3 className="text-xl font-bold mb-2">TECH & AI</h3>
-              <p className="text-sm text-gray-300 mb-4">June 26</p>
-              <div className="space-y-2">
-                <p>00:00 Event Title</p>
-                <p>00:00 Event Title</p>
-              </div>
-            </div>
-            <div className="bg-[#112240] p-6 rounded-xl">
-              <h3 className="text-xl font-bold mb-2">BUSINESS & CULTURE</h3>
-              <p className="text-sm text-gray-300 mb-4">June 27</p>
-              <div className="space-y-2">
-                <p>00:00 Event Title</p>
-                <p>00:00 Event Title</p>
-              </div>
-            </div>
+    {/* Day Card */}
+    <div className="bg-[#112240] p-8 rounded-2xl flex flex-col">
+      <div className="mb-6">
+        <h3 className="text-2xl font-bold text-yellow-400 mb-2">TECH & AI</h3>
+        <p className="text-sm text-gray-300">June 26</p>
+      </div>
+      <div className="flex-1 flex flex-col justify-center space-y-4 text-left text-gray-100">
+        <div>
+          <p className="font-semibold">13.00- 14.00</p>
+          <p className="text-sm text-gray-300"><strong>Cybersecurity for  Agentic AI</strong>, by Rodrigo Brito</p>
         </div>
-      </section>
+
+        <div>
+          <p className="font-semibold">16.00 - 17:30</p>
+          <p className="text-sm text-gray-300">Craft Circles United: <strong>Javascript Fullstack Temptation - Heaven-Sent or Hell-Bound?</strong> by Danilo Hofmann, the Devil, Francisco Brito, the Angel</p>
+        </div>
+        <div>
+          <p className="font-semibold">18:00 - 19:00 🤖</p>
+          <p className="text-sm text-gray-300">Quality Talks</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Day Card */}
+    <div className="bg-[#112240] p-8 rounded-2xl flex flex-col">
+      <div className="mb-6">
+        <h3 className="text-2xl font-bold text-yellow-400 mb-2">BUSINESS & CULTURE</h3>
+        <p className="text-sm text-gray-300">June 27</p>
+      </div>
+      <div className="flex-1 flex flex-col justify-center space-y-4 text-left text-gray-100">
+      <div>
+          <p className="font-semibold">13.00- 14.00</p>
+          <p className="text-sm text-gray-300"><strong>Diving Into Valtech Portugal</strong> - meet our team, our project and our Smart Search Accelerator, by our amazing team!</p>
+      </div>
+      <div>
+          <p className="font-semibold">17.00 - 18.00</p>
+          <p className="text-sm text-gray-300"><strong>June AI Contest</strong> - Awards Ceremony</p>
+      </div>
+      <div>
+          <p className="font-semibold">18.00 - 🎊🎤</p>
+          <p className="text-sm text-gray-300">Tech & Saints Week Gran Finale: <strong>Saints Party</strong>, hosted by our Karoake Master Rúben aka "Ricardão" </p>
+      </div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
       {/* Speakers Section */}
-      <section id="speakers" className="py-16 px-4 text-center">
+      <section id="speakers" className="py-10 px-6 text-center bg-[#0a192f]">
         <h2 className="text-3xl font-bold mb-8 text-yellow-400">SPEAKERS</h2>
         <div className="max-w-5xl mx-auto grid md:grid-cols-4 gap-6">
-          {Array(4).fill(0).map((_, idx) => (
-            <div key={idx} className="bg-[#112240] p-4 rounded-xl">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gray-600 mb-4" />
-              <p className="font-semibold">Job Alame</p>
-              <p className="text-sm text-gray-300">Job Title</p>
+
+            <div className="bg-[#112240] p-4 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image
+                src="/speaker1.jpeg"  // path to your speaker's photo
+                alt="Rodrigo Brito"
+                fill
+                className="object-cover"
+              />
             </div>
-          ))}
+              <p className="font-semibold">Rodrigo Brito</p>
+              <p className="text-sm text-gray-300">VP of Products, Cybersecurity</p>
+              <p className="text-sm text-gray-300">Nokia</p>
+            </div>
+
+            <div className="bg-[#112240] p-4 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image
+                src="/speaker2.jpeg"  // path to your speaker's photo
+                alt="Marco António Silva"
+                fill
+                className="object-cover"
+              />
+            </div>
+              <p className="font-semibold">Marco António Silva</p>
+              <p className="text-sm text-gray-300">National Innovation Officer</p>
+              <p className="text-sm text-gray-300">Microsoft</p>
+            </div>
+            
+            <div className="bg-[#112240] p-4 rounded-xl">
+              <div className="w-24 h-24 mx-auto rounded-full bg-gray-600 mb-4" />
+              <p className="font-semibold">Danilo Hoffmann</p>
+              <p className="text-sm text-gray-300">Intershop PWA Contributor, Freelancer</p>
+            </div>
+            
+            <div className="bg-[#112240] p-4 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image
+                src="/speaker3.jpg"  // path to your speaker's photo
+                alt="Francisco Brito"
+                fill
+                className="object-cover"
+              />
+            </div>
+              <p className="font-semibold">Francisco Brito</p>
+              <p className="text-sm text-gray-300">Tech Lead</p>
+              <p className="text-sm text-gray-300">Valtech</p>
+            </div>
+            
         </div>
       </section>
       <section className="w-full overflow-hidden">
@@ -216,7 +342,7 @@ export default function Home() {
 
           {/* Prize */}
           <p className="text-lg font-bold text-red-500 mb-8">
-            🏆 Win a €100 TAP Air Portugal Voucher!
+            🏆 Win a €100 TAP Air Portugal Voucher and a T&S week t-shirt!
           </p>
 
           {/* Tracks */}
@@ -234,13 +360,49 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-all"
             >
-              📜 Read Full Contest Rules
+              📜 Rules
             </a>
           </div>
         </div>
 
       </div>
     </section>
+    <section id="lucky-circuit" className="w-full bg-black text-white relative">
+  <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-12">
+
+    {/* Image or wheel visual */}
+    <div className="md:w-3/5 text-center md:text-left pt-20">
+  <h2 className="text-4xl font-bold text-yellow-400 mb-4">
+    The Saints Wheel of Luck
+  </h2>
+
+  <p className="text-lg mb-6">
+    Every day during <strong>Tech & Saints Week</strong>, get your chance to spin our Saints & Tech-inspired Wheel of Luck!
+  </p>
+
+  <p className="text-md text-gray-300 mb-6">
+    Stop by the wheel booth at lunch or after the talks — <strong>one spin per day</strong>, and plenty of surprises in store!
+  </p>
+
+  {/* 🎁 Prize List */}
+  <ul className="list-none space-y-2 text-gray-100 mb-8">
+    <li>🎒 <strong>Tech & Saints Backpack</strong></li>
+    <li>👕 <strong>Limited Edition Event T-shirt</strong></li>
+    <li>☕ <strong>Custom Mug with Event Artwork</strong></li>
+  </ul>
+</div>
+
+    {/* Text content */}
+    <div className="md:w-2/5">
+    <img
+        src="/logo_image.png" // Image with your updated visual
+        alt="Tech & Saints Wheel of Luck"
+        className="w-full rounded-3xl shadow-lg"
+      />
+    </div>
+
+  </div>
+</section>
       {/* Location Section */}
       <section id="location" className="w-full py-20 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto px-6">
