@@ -230,7 +230,7 @@ export default function Home() {
       </div>
       <div>
           <p className="font-semibold">18.00 - 🎊🎤</p>
-          <p className="text-sm text-gray-300">Tech & Saints Week Gran Finale: <strong>Saints Party</strong>, hosted by our Karoake Master Rúben aka "Ricardão" </p>
+          <p className="text-sm text-gray-300">Tech & Saints Week Gran Finale: <strong>Saints Party</strong>, hosted by our Karoake Master Rúben aka Ricardão </p>
       </div>
       </div>
     </div>
@@ -332,7 +332,7 @@ export default function Home() {
           </h2>
 
           <p className="text-lg mb-4">
-            Join us for an inclusive AI challenge open to all at Valtech. Whether you're coding or just dreaming — your ideas matter!
+            Join us for an inclusive AI challenge open to all at Valtech. Whether you are coding or just dreaming — your ideas matter!
           </p>
 
           {/* Contest Duration */}
