@@ -349,7 +349,7 @@ export default function Home() {
       <div className="flex-1 flex flex-col justify-center space-y-4 text-left text-gray-100">
       <div>
           <p className="font-semibold">13.00- 14.00</p>
-          <p className="text-sm text-gray-300"><strong>Diving Into Valtech Portugal</strong> - meet our team, our project and our Smart Search Accelerator, by our amazing team!</p>
+          <p className="text-sm text-gray-300"><strong>Diving Into Valtech Portugal</strong> - meet our team, our projects and our Smart Search Accelerator, by our amazing team!</p>
       </div>
       <div>
           <p className="font-semibold">17.00 - 18.00</p>
