@@ -8,6 +8,119 @@ import { FaUserPlus, FaRobot } from 'react-icons/fa';
 
 const images = ['about1.jpeg', 'about2.jpeg', 'about3.jpg', 'about4.jpg','about5.jpg', 'about6.jpg', 'about11.jpg', 'about8.jpg', 'about9.jpg', 'about10.jpg', 'about12.jpg'];
 
+const speakers = [
+  {
+    name: 'Joana Cruz',
+    role: 'Head of Business Operations',
+    img: 'speaker7.jpeg'
+  },
+  {
+    name: 'António Silva',
+    role: 'Head of Technology',
+    img: 'speaker8.jpeg'
+  },
+  {
+    name: 'Francisco Brito',
+    role: 'Tech Lead',
+    img: 'speaker3.jpg'
+  },
+  {
+    name: 'Veronica Macovei',
+    role: 'QA Engineer',
+    img: 'speaker5.jpeg'
+  },
+  {
+    name: 'João Liliu',
+    role: '.NET Engineer',
+    img: 'speaker6.jpeg'
+  },
+  {
+    name: 'Miguel Duarte',
+    role: '.NET Engineer',
+    img: 'speaker9.jpeg'
+  },
+  {
+    name: 'Eduardo Carneiro',
+    role: 'QA Automation Engineer',
+    img: 'speaker10.jpeg'
+  },
+  {
+    name: 'Francisco Lourenço',
+    role: 'Associate Frontend Engineer',
+    img: 'speaker23.jpeg'
+  },
+  {
+    name: 'Joana Cerqueira',
+    role: 'Trainee QA Automation Engineer',
+    img: 'speaker12.jpeg'
+  },
+  {
+    name: 'Bas Ariaansz',
+    role: 'Business Analyst',
+    img: 'speaker11.jpeg'
+  },
+  {
+    name: 'Rita Neves',
+    role: 'Senior Frontend Engineer',
+    img: 'speaker13.jpeg'
+  },
+  {
+    name: 'Pedro Costa',
+    role: '.NET Engineer',
+    img: 'speaker14.jpeg'
+  },
+  {
+    name: 'Edgar Silva',
+    role: 'Senior Java Engineer',
+    img: 'speaker15.jpeg'
+  },
+  {
+    name: 'Cesar Sá',
+    role: 'Lead Frontend Engineer',
+    img: 'speaker16.jpeg'
+  },
+  {
+    name: 'Tiago Alves',
+    role: 'Senior QA Automation Engineer',
+    img: 'speaker17.jpeg'
+  },
+  {
+    name: 'Tiago Viana',
+    role: 'Frontend Engineer',
+    img: 'speaker18.jpeg'
+  },
+  {
+    name: 'Mariana Doblas',
+    role: 'Salesforce Marketing Cloud Consultant',
+    img: 'speaker19.jpeg'
+  },
+  {
+    name: 'Liliane Correia',
+    role: 'Marketing Automation Consultant',
+    img: 'speaker20.jpeg'
+  },
+  {
+    name: 'Pedro Sousa',
+    role: 'Lead Cloud Engineer',
+    img: 'speaker21.jpeg'
+  },
+  {
+    name: 'Melina Picco',
+    role: 'People Partner',
+    img: 'speaker24.jpeg'
+  },
+  {
+    name: 'Luísa Santos',
+    role: 'Care Manager',
+    img: 'speaker25.jpeg'
+  },
+  {
+    name: 'Tânia Pimentel',
+    role: 'Head of People & Culture',
+    img: 'speaker22.jpeg'
+  },
+]
+
 export default function Home() {
 
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -53,7 +166,7 @@ export default function Home() {
     className="object-cover z-0"
   />
     <div className="sticky-buttons">
-      <a href="#register" className="sticky-button register">
+      <a href="https://forms.office.com/e/FYSYUEV6uS" target='_blank' className="sticky-button register">
         <div className="icon-wrapper">
           <FaUserPlus className="icon" />
         </div>
@@ -110,27 +223,41 @@ export default function Home() {
         From insightful talks to festive moments, this is where <strong>innovation meets tradition</strong>, and where <strong>creativity, collaboration, and culture intersect</strong>.
       </p>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-4 flex-wrap">
+      <div className="flex flex-col sm:flex-row items-center gap-4 flex-wrap">
   <a
-    href="#register"
+    href="https://forms.office.com/e/FYSYUEV6uS"
+    target='_blank'
     className="bg-[#10B981] hover:bg-[#0f766e] text-white font-bold py-3 px-6 rounded-full transition-all duration-300 w-full sm:w-auto text-center"
   >
     Register Now
   </a>
 
   <a
-    href="#lucky-circuit"
+    href="#contest"
     className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-3 px-6 rounded-full transition-all w-full sm:w-auto text-center"
   >
-    The Saints Wheel of Luck
+      June AI Contest
   </a>
 
   <a
-    href="#contest"
+     href="#lucky-circuit"
     className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 w-full sm:w-auto text-center"
   >
-    June AI Contest
+     Saints Wheel of Luck
   </a>
+</div>
+<div className="max-w-4xl mx-auto mt-3">
+  <details className="bg-white rounded-xl text-gray-900">
+    <summary className="text-xl font-bold text-green-600 mb-2 cursor-pointer">
+      📬 Contact Us
+    </summary>
+    <div className="mt-4 text-gray-700 text-base leading-relaxed">
+      For any questions about <strong>Tech & Saints Week</strong>, the <strong>June AI Contest</strong>, or anything else related to the event, feel free to reach out!
+      <br /><br />
+      <strong>Email:</strong> <a href="mailto:francisco.brito@valtech.com" className="underline text-green-700">francisco.brito@valtech.com</a><br />
+      <strong>Teams:</strong> Francisco Brito
+    </div>
+  </details>
 </div>
     </div>
 
@@ -181,7 +308,7 @@ export default function Home() {
         </div>
         <div>
           <p className="font-semibold">13.30 - 14:30</p>
-          <p className="text-sm text-gray-300">Craft Circles United: <strong>Accessibility</strong></p>
+          <p className="text-sm text-gray-300">Craft Circles United: <strong>Making the Web Inclusive: Accessibility in Action</strong>, by Veronica Macovei and João Liliu</p>
         </div>
         <div>
           <p className="font-semibold">17:30 - 20:00 🌍</p>
@@ -199,16 +326,16 @@ export default function Home() {
       <div className="flex-1 flex flex-col justify-center space-y-4 text-left text-gray-100">
         <div>
           <p className="font-semibold">13.00- 14.00</p>
-          <p className="text-sm text-gray-300"><strong>Cybersecurity for  Agentic AI</strong>, by Rodrigo Brito</p>
+          <p className="text-sm text-gray-300"><strong>How multi-stage attacks, GenAI, and quantum computing threaten critical telecommunications infrastructure</strong>, by Rodrigo Brito</p>
         </div>
 
         <div>
           <p className="font-semibold">16.00 - 17:30</p>
-          <p className="text-sm text-gray-300">Craft Circles United: <strong>Javascript Fullstack Temptation - Heaven-Sent or Hell-Bound?</strong> by Danilo Hofmann, the Devil, Francisco Brito, the Angel</p>
+          <p className="text-sm text-gray-300">Craft Circles United: <strong>Javascript Fullstack Temptation - Heaven-Sent or Hell-Bound?</strong> by Danilo Hoffmann, the Devil, Francisco Brito, the Angel</p>
         </div>
         <div>
           <p className="font-semibold">18:00 - 19:00 🤖</p>
-          <p className="text-sm text-gray-300">Quality Talks</p>
+          <p className="text-sm text-gray-300">Quality Talks: <strong>AI & Innovation</strong>, by Marco António Silva</p>
         </div>
       </div>
     </div>
@@ -241,55 +368,64 @@ export default function Home() {
       {/* Speakers Section */}
       <section id="speakers" className="py-10 px-6 text-center bg-[#0a192f]">
         <h2 className="text-3xl font-bold mb-8 text-yellow-400">SPEAKERS</h2>
-        <div className="max-w-5xl mx-auto grid md:grid-cols-4 gap-6">
+        <div className="max-w-5xl mx-auto grid md:grid-cols-5 gap-6">
 
-            <div className="bg-[#112240] p-4 rounded-xl">
+            <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image
-                src="/speaker1.jpeg"  // path to your speaker's photo
+                src="/speaker1.jpeg"  
                 alt="Rodrigo Brito"
                 fill
                 className="object-cover"
               />
             </div>
               <p className="font-semibold">Rodrigo Brito</p>
-              <p className="text-sm text-gray-300">VP of Products, Cybersecurity</p>
+              <p className="text-xs text-gray-300">VP of Products, Cybersecurity</p>
               <p className="text-sm text-gray-300">Nokia</p>
             </div>
 
-            <div className="bg-[#112240] p-4 rounded-xl">
+            <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image
-                src="/speaker2.jpeg"  // path to your speaker's photo
+                src="/speaker2.jpeg" 
                 alt="Marco António Silva"
                 fill
                 className="object-cover"
               />
             </div>
               <p className="font-semibold">Marco António Silva</p>
-              <p className="text-sm text-gray-300">National Innovation Officer</p>
+              <p className="text-xs text-gray-300">National Innovation Officer</p>
               <p className="text-sm text-gray-300">Microsoft</p>
             </div>
             
-            <div className="bg-[#112240] p-4 rounded-xl">
-              <div className="w-24 h-24 mx-auto rounded-full bg-gray-600 mb-4" />
-              <p className="font-semibold">Danilo Hoffmann</p>
-              <p className="text-sm text-gray-300">Intershop PWA Contributor, Freelancer</p>
-            </div>
-            
-            <div className="bg-[#112240] p-4 rounded-xl">
+            <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image
-                src="/speaker3.jpg"  // path to your speaker's photo
-                alt="Francisco Brito"
+                src="/speaker4.jpg"  
+                alt="Danilo Hoffmann"
                 fill
                 className="object-cover"
               />
             </div>
-              <p className="font-semibold">Francisco Brito</p>
-              <p className="text-sm text-gray-300">Tech Lead</p>
-              <p className="text-sm text-gray-300">Valtech</p>
+              <p className="font-semibold">Danilo Hoffmann</p>
+              <p className="text-xs text-gray-300">Freelancer, Javascript Enthusiast</p>
             </div>
+            {shuffleArray(speakers).map((person,i) => (
+              <div key={i} className="bg-[#112240] p-2 rounded-xl">
+              <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+                <Image
+                  src={'/' + person.img}  
+                  alt={person.name}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+                <p className="font-semibold">{person.name}</p>
+                <p className="text-xs text-gray-300">{person.role}</p>
+                <p className="text-sm text-gray-300">Valtech Portugal</p>
+              </div>
+            ))}
+
             
         </div>
       </section>
@@ -337,12 +473,12 @@ export default function Home() {
 
           {/* Contest Duration */}
           <p className="text-md font-medium text-gray-700 mb-6">
-            📅 Contest runs from <strong>June 1</strong> to <strong>June 20</strong>, 2025
+            📅 Contest runs from until June 20, 2025
           </p>
 
           {/* Prize */}
           <p className="text-lg font-bold text-red-500 mb-8">
-            🏆 Win a €100 TAP Air Portugal Voucher and a T&S week t-shirt!
+            🏆 Win a €100 GoGift Voucher!
           </p>
 
           {/* Tracks */}
@@ -358,9 +494,16 @@ export default function Home() {
               href="/contest-rules.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-all"
+              className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 mx-2 rounded-full transition-all"
             >
               📜 Rules
+            </a>
+            <a
+              href="https://forms.office.com/e/VFt2W7zTz5"
+              target='_blank'
+              className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full transition-all"
+            >
+              Submit your idea
             </a>
           </div>
         </div>
@@ -371,9 +514,9 @@ export default function Home() {
   <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-12">
 
     {/* Image or wheel visual */}
-    <div className="md:w-3/5 text-center md:text-left pt-20">
+    <div className="md:w-7/10 text-center md:text-left pt-20">
   <h2 className="text-4xl font-bold text-yellow-400 mb-4">
-    The Saints Wheel of Luck
+    Saints Wheel of Luck
   </h2>
 
   <p className="text-lg mb-6">
@@ -383,17 +526,10 @@ export default function Home() {
   <p className="text-md text-gray-300 mb-6">
     Stop by the wheel booth at lunch or after the talks — <strong>one spin per day</strong>, and plenty of surprises in store!
   </p>
-
-  {/* 🎁 Prize List */}
-  <ul className="list-none space-y-2 text-gray-100 mb-8">
-    <li>🎒 <strong>Tech & Saints Backpack</strong></li>
-    <li>👕 <strong>Limited Edition Event T-shirt</strong></li>
-    <li>☕ <strong>Custom Mug with Event Artwork</strong></li>
-  </ul>
 </div>
 
     {/* Text content */}
-    <div className="md:w-2/5">
+    <div className="md:w-3/10">
     <img
         src="/logo_image.png" // Image with your updated visual
         alt="Tech & Saints Wheel of Luck"
@@ -424,4 +560,13 @@ export default function Home() {
       </section>
     </div>
   );
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function shuffleArray(array: any): Array<{ name: string, role: string, img: string}> {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1)); 
+    [array[i], array[j]] = [array[j], array[i]];   
+  }
+  return array;
 }
