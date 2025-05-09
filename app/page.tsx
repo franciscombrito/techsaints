@@ -3,7 +3,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import 'keen-slider/keen-slider.min.css';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FaUserPlus, FaRobot } from 'react-icons/fa';
 
 const images = ['about1.jpeg', 'about2.jpeg', 'about3.jpg', 'about4.jpg','about5.jpg', 'about6.jpg', 'about11.jpg', 'about8.jpg', 'about9.jpg', 'about10.jpg', 'about12.jpg'];
@@ -124,7 +124,7 @@ const speakers = [
 export default function Home() {
 
   const scrollRef = useRef<HTMLDivElement>(null);
-
+  const [showValtechSpeakers, setShowValtechSpeakers] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -191,6 +191,8 @@ export default function Home() {
       <a href="#about" className="text-white font-semibold mr-2">ABOUT</a>
       ||
       <a href="#agenda" className="text-white font-semibold ml-2">AGENDA</a>
+      ||
+      <a href="#location" className="text-white font-semibold ml-2">LOCATION</a>
     </span>
     <div className="flex mt-4 justify-center">
       <Image
@@ -240,24 +242,11 @@ export default function Home() {
   </a>
 
   <a
-     href="#lucky-circuit"
+     href="#europride"
     className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 w-full sm:w-auto text-center"
   >
-     Saints Wheel of Luck
+     EuroPride 2025 - Lisbon
   </a>
-</div>
-<div className="max-w-4xl mx-auto mt-3">
-  <details className="bg-white rounded-xl text-gray-900">
-    <summary className="text-xl font-bold text-green-600 mb-2 cursor-pointer">
-      📬 Contact Us
-    </summary>
-    <div className="mt-4 text-gray-700 text-base leading-relaxed">
-      For any questions about <strong>Tech & Saints Week</strong>, the <strong>June AI Contest</strong>, or anything else related to the event, feel free to reach out!
-      <br /><br />
-      <strong>Email:</strong> <a href="mailto:francisco.brito@valtech.com" className="underline text-green-700">francisco.brito@valtech.com</a><br />
-      <strong>Teams:</strong> Francisco Brito
-    </div>
-  </details>
 </div>
     </div>
 
@@ -299,11 +288,11 @@ export default function Home() {
       </div>
       <div className="flex-1 flex flex-col justify-center space-y-4 text-left text-gray-100">
       <div>
-          <p className="font-semibold">12.00- 12.15</p>
+          <p className="font-semibold">12.00- 12.30</p>
           <p className="text-sm text-gray-300">Tech & Saints Week <strong>Kick-off</strong></p>
         </div>
         <div>
-          <p className="font-semibold">12.15 - 13.30</p>
+          <p className="font-semibold">12.30 - 13.30</p>
           <p className="text-sm text-gray-300"><strong>Cape Verdian Lunch</strong> with Austelino Correia, Presidente Assembleia Nacional de Cabo Verde</p>
         </div>
         <div>
@@ -325,7 +314,7 @@ export default function Home() {
       </div>
       <div className="flex-1 flex flex-col justify-center space-y-4 text-left text-gray-100">
         <div>
-          <p className="font-semibold">13.00- 14.00</p>
+          <p className="font-semibold">14.00- 15.00</p>
           <p className="text-sm text-gray-300"><strong>How multi-stage attacks, GenAI, and quantum computing threaten critical telecommunications infrastructure</strong>, by Rodrigo Brito</p>
         </div>
 
@@ -357,7 +346,7 @@ export default function Home() {
       </div>
       <div>
           <p className="font-semibold">18.00 - 🎊🎤</p>
-          <p className="text-sm text-gray-300">Tech & Saints Week Gran Finale: <strong>Saints Party</strong>, hosted by our Karoake Master Rúben aka Ricardão </p>
+          <p className="text-sm text-gray-300">Tech & Saints Week Gran Finale: <strong>Saints Party</strong>, hosted by our Karaoke Master Rúben aka Ricardão </p>
       </div>
       </div>
     </div>
@@ -368,8 +357,20 @@ export default function Home() {
       {/* Speakers Section */}
       <section id="speakers" className="py-10 px-6 text-center bg-[#0a192f]">
         <h2 className="text-3xl font-bold mb-8 text-yellow-400">SPEAKERS</h2>
-        <div className="max-w-5xl mx-auto grid md:grid-cols-5 gap-6">
-
+        <div className="max-w-5xl mx-auto grid md:grid-cols-4 gap-6">
+            <div className="bg-[#112240] p-2 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image
+                src="/speaker26.jpeg"  
+                alt="Sheree Atcheson"
+                fill
+                className="object-cover"
+              />
+            </div>
+              <p className="font-semibold">Sheree Atcheson</p>
+              <p className="text-xs text-gray-300">Group SVP Diversity & Inclusion</p>
+              <p className="text-sm text-gray-300">Valtech</p>
+            </div>
             <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image
@@ -410,7 +411,14 @@ export default function Home() {
               <p className="font-semibold">Danilo Hoffmann</p>
               <p className="text-xs text-gray-300">Freelancer, Javascript Enthusiast</p>
             </div>
-            {shuffleArray(speakers).map((person,i) => (
+            </div>
+            <button
+              onClick={() => setShowValtechSpeakers(!showValtechSpeakers)}
+              className="my-6 bg-yellow-400 text-black font-semibold px-4 py-2 rounded-full hover:bg-yellow-300 transition"
+            >              {showValtechSpeakers ? 'Hide Valtech Portugal Speakers' : 'Show Valtech Portugal Speakers'}
+            </button>
+          <div className="max-w-5xl mx-auto grid md:grid-cols-4 gap-6">
+            {showValtechSpeakers && shuffleArray(speakers).map((person,i) => (
               <div key={i} className="bg-[#112240] p-2 rounded-xl">
               <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
                 <Image
@@ -538,12 +546,68 @@ export default function Home() {
     </div>
 
   </div>
+  <section className="relative w-full py-20 bg-white text-gray-900">
+  {/* Top border */}
+  <div className="absolute top-0 left-0 w-full h-[5px] bg-gradient-to-r from-pink-500 via-yellow-400 to-green-500" />
+
+  {/* Bottom border */}
+  <div className="absolute bottom-0 left-0 w-full h-[5px] bg-gradient-to-r from-pink-500 via-yellow-400 to-green-500" />
+
+  <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-10 relative z-10">
+    
+    {/* Image */}
+    <div className="md:w-1/2">
+    <div className="w-full aspect-[4/3] rounded-2xl p-[3px] bg-gradient-to-r from-pink-500 via-yellow-400 to-green-500 shadow-xl">
+  <div className="w-full h-full rounded-2xl overflow-hidden">
+    <img
+      src="/pride.png"
+      alt="Lisbon with Rainbow for EuroPride 2025"
+      className="w-full h-full object-cover"
+    />
+  </div>
+</div>
+    </div>
+
+    {/* Text Content */}
+    <div className="md:w-1/2 text-center md:text-left">
+      <h2 className="text-4xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-yellow-400 to-green-500">
+        EuroPride 2025 Comes to Lisbon
+      </h2>
+      <p className="text-lg mb-6">
+        This year, we’re proud to host <strong>Tech & Saints Week</strong> in the same city where 
+        <strong> EuroPride 2025 </strong> will take place! Lisbon will be buzzing with 
+        <strong> diversity, celebration, and culture</strong> — and we’re excited to be part of it.
+      </p>
+      <p className="text-md text-gray-600 mb-6">
+        Join us in person and experience a week filled with <strong>technology, tradition, and pride</strong>. 
+        From inspiring talks and Portuguese <em>Santos Populares</em> festivities to the vibrant 
+        <strong> EuroPride 2025</strong> events — Lisbon will be the place to be this June!
+      </p>
+      <a
+        href="https://europride2025.pt"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block bg-gradient-to-r from-pink-500 via-yellow-400 to-green-500 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:scale-105 transition-transform"
+      >
+        Learn More About EuroPride 2025
+      </a>
+    </div>
+
+  </div>
+</section>
 </section>
       {/* Location Section */}
       <section id="location" className="w-full py-20 bg-white text-gray-900">
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-yellow-500 mb-6">Where to Find Us</h2>
           <p className="mb-4">Join us at our Lisbon office during Tech & Saints Week</p>
+
+          <div className="mt-4 text-gray-700 text-base leading-relaxed mb-5">
+            For any questions about <strong>Tech & Saints Week</strong>, the <strong>June AI Contest</strong>, or anything else related to the event, feel free to reach out!
+            <br /><br />
+            <strong>Email:</strong> <a href="mailto:francisco.brito@valtech.com" className="underline text-green-700">francisco.brito@valtech.com</a><br />
+            <strong>Teams:</strong> Francisco Brito
+          </div>
 
           <div className="w-full h-[400px] rounded-2xl overflow-hidden shadow-lg">
             <iframe
