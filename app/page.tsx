@@ -190,7 +190,7 @@ export default function Home() {
     <span className="text-xl mt-3 block">
       <a href="#about" className="text-white font-semibold mr-2">ABOUT</a>
       ||
-      <a href="#agenda" className="text-white font-semibold ml-2">AGENDA</a>
+      <a href="#agenda" className="text-white font-semibold mx-2">AGENDA</a>
       ||
       <a href="#location" className="text-white font-semibold ml-2">LOCATION</a>
     </span>
