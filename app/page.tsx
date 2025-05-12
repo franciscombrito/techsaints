@@ -546,7 +546,8 @@ export default function Home() {
     </div>
 
   </div>
-  <section className="relative w-full py-20 bg-white text-gray-900">
+</section>
+<section id="europride"  className="relative w-full py-20 bg-white text-gray-900">
   {/* Top border */}
   <div className="absolute top-0 left-0 w-full h-[5px] bg-gradient-to-r from-pink-500 via-yellow-400 to-green-500" />
 
@@ -594,7 +595,6 @@ export default function Home() {
     </div>
 
   </div>
-</section>
 </section>
       {/* Location Section */}
       <section id="location" className="w-full py-20 bg-white text-gray-900">
