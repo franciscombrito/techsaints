@@ -194,7 +194,16 @@ export default function Home() {
       ||
       <a href="#location" className="text-white font-semibold ml-2">LOCATION</a>
     </span>
-    <div className="flex mt-4 justify-center">
+    <div className='mt-5'>
+        <a
+    href="https://forms.office.com/e/FYSYUEV6uS"
+    target='_blank'
+    className="bg-[#10B981] hover:bg-[#0f766e] text-white font-bold py-3 px-6 rounded-full transition-all duration-300 w-full sm:w-auto text-center"
+  >
+    Register Now
+  </a>
+    </div>
+    <div className="flex justify-center">
       <Image
         src="/Valtech_Logo_White.svg"
         alt="Logo"
