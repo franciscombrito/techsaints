@@ -305,7 +305,7 @@ export default function Home() {
           <p className="text-sm text-gray-300"><strong>Cape Verdian Lunch</strong> with Austelino Correia, Presidente Assembleia Nacional de Cabo Verde</p>
         </div>
         <div>
-          <p className="font-semibold">14.30 - 14:45</p>
+          <p className="font-semibold">13.30 - 14:45</p>
                     <p className="text-sm text-gray-300">Inclusion in Action: <strong>Guiding the Visually Impaired</strong> with João Azevedo, teacher of students with special needs </p>
                            <br />
           <p className="text-sm text-gray-300">Craft Circles United: <strong>Making the Web Inclusive: Accessibility in Action</strong>, by Veronica Macovei and João Liliu</p>
