@@ -292,21 +292,24 @@ export default function Home() {
     {/* Day Card */}
     <div className="bg-[#112240] p-8 rounded-2xl flex flex-col">
       <div className="mb-6">
-        <h3 className="text-2xl font-bold text-yellow-400 mb-2">TECH & DEI</h3>
+        <h3 className="text-2xl font-bold text-yellow-400 mb-2">TECH & D&I</h3>
         <p className="text-sm text-gray-300">June 24</p>
       </div>
       <div className="flex-1 flex flex-col justify-center space-y-4 text-left text-gray-100">
       <div>
-          <p className="font-semibold">12.00- 12.30</p>
-          <p className="text-sm text-gray-300">Tech & Saints Week <strong>Kick-off</strong></p>
+          <p className="font-semibold">12.00- 12.45</p>
+          <p className="text-sm text-gray-300">Tech & Saints Week <strong>Kick-off</strong>, with Sheree Atcheson</p>
         </div>
         <div>
           <p className="font-semibold">12.30 - 13.30</p>
           <p className="text-sm text-gray-300"><strong>Cape Verdian Lunch</strong> with Austelino Correia, Presidente Assembleia Nacional de Cabo Verde</p>
         </div>
         <div>
-          <p className="font-semibold">13.30 - 14:30</p>
+          <p className="font-semibold">14.30 - 14:45</p>
+                    <p className="text-sm text-gray-300">Inclusion in Action: <strong>Guiding the Visually Impaired</strong> with João Azevedo, teacher of students with special needs </p>
+                           <br />
           <p className="text-sm text-gray-300">Craft Circles United: <strong>Making the Web Inclusive: Accessibility in Action</strong>, by Veronica Macovei and João Liliu</p>
+
         </div>
         <div>
           <p className="font-semibold">17:30 - 20:00 🌍</p>
