@@ -172,12 +172,6 @@ export default function Home() {
         </div>
         <span className="button-text">Register</span>
       </a>
-      <a href="#contest" className="sticky-button contest">
-        <div className="icon-wrapper">
-          <FaRobot className="icon" />
-        </div>
-        <span className="button-text">June AI Contest</span>
-      </a>
     </div>
 
   <div className="absolute top-[73vh] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center z-20 px-4">
@@ -243,12 +237,6 @@ export default function Home() {
     Register Now
   </a>
 
-  <a
-    href="#contest"
-    className="bg-yellow-400 hover:bg-yellow-300 text-black font-bold py-3 px-6 rounded-full transition-all w-full sm:w-auto text-center"
-  >
-      June AI Contest
-  </a>
 
   <a
      href="#europride"
@@ -326,7 +314,7 @@ export default function Home() {
       </div>
       <div className="flex-1 flex flex-col justify-center space-y-4 text-left text-gray-100">
         <div>
-          <p className="font-semibold">14.00- 15.00</p>
+          <p className="font-semibold">13.15- 14.00</p>
           <p className="text-sm text-gray-300"><strong>How multi-stage attacks, GenAI, and quantum computing threaten critical telecommunications infrastructure</strong>, by Rodrigo Brito</p>
         </div>
 
@@ -351,10 +339,6 @@ export default function Home() {
       <div>
           <p className="font-semibold">13.00- 14.00</p>
           <p className="text-sm text-gray-300"><strong>Diving Into Valtech Portugal</strong> - meet our team, our projects and our Smart Search Accelerator, by our amazing team!</p>
-      </div>
-      <div>
-          <p className="font-semibold">17.00 - 18.00</p>
-          <p className="text-sm text-gray-300"><strong>June AI Contest</strong> - Awards Ceremony</p>
       </div>
       <div>
           <p className="font-semibold">18.00 - 🎊🎤</p>
@@ -468,68 +452,6 @@ export default function Home() {
           ))}
         </div>
     </section>
-    <section id="contest" className="w-full py-20 bg-yellow-50 text-gray-900">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-10">
-
-        {/* Image Side */}
-        <div className="md:w-1/2">
-          <img
-            src="/juneAI.png"
-            alt="June AI Contest illustration"
-            className="rounded-3xl shadow-xl w-full object-cover"
-          />
-        </div>
-
-        {/* Text Side */}
-        <div className="md:w-1/2 text-center md:text-left">
-
-          <h2 className="text-4xl font-bold text-green-600 mb-6">
-            Unleash Your Creativity
-          </h2>
-
-          <p className="text-lg mb-4">
-            Join us for an inclusive AI challenge open to all at Valtech. Whether you are coding or just dreaming — your ideas matter!
-          </p>
-
-          {/* Contest Duration */}
-          <p className="text-md font-medium text-gray-700 mb-6">
-            📅 Contest runs from until June 20, 2025
-          </p>
-
-          {/* Prize */}
-          <p className="text-lg font-bold text-red-500 mb-8">
-            🏆 Win a €100 GoGift Voucher!
-          </p>
-
-          {/* Tracks */}
-          <ul className="space-y-4 text-left list-inside list-none">
-            <li><strong>🧠 No-Code Idea Challenge:</strong> Share a smart AI application or business idea powered by AI — no coding required!</li>
-            <li><strong>🧘 Productivity & Wellbeing:</strong> Propose AI tools that enhance productivity and promote workplace wellbeing.</li>
-            <li><strong>🌍 Diversity, Equity & Inclusion:</strong> Suggest AI-driven initiatives to foster a more inclusive work environment.</li>
-          </ul>
-
-          {/* Link to Contest Rules */}
-          <div className="mt-8">
-            <a
-              href="/contest-rules.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 mx-2 rounded-full transition-all"
-            >
-              📜 Rules
-            </a>
-            <a
-              href="https://forms.office.com/e/VFt2W7zTz5"
-              target='_blank'
-              className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded-full transition-all"
-            >
-              Submit your idea
-            </a>
-          </div>
-        </div>
-
-      </div>
-    </section>
     <section id="lucky-circuit" className="w-full bg-black text-white relative">
   <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-12">
 
@@ -615,7 +537,7 @@ export default function Home() {
           <p className="mb-4">Join us at our Lisbon office during Tech & Saints Week</p>
 
           <div className="mt-4 text-gray-700 text-base leading-relaxed mb-5">
-            For any questions about <strong>Tech & Saints Week</strong>, the <strong>June AI Contest</strong>, or anything else related to the event, feel free to reach out!
+            For any questions about <strong>Tech & Saints Week</strong>, or anything else related to the event, feel free to reach out!
             <br /><br />
             <strong>Email:</strong> <a href="mailto:francisco.brito@valtech.com" className="underline text-green-700">francisco.brito@valtech.com</a><br />
             <strong>Teams:</strong> Francisco Brito
