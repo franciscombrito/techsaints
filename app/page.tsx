@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import 'keen-slider/keen-slider.min.css';
 import { useEffect, useRef, useState } from 'react';
-import { FaUserPlus, FaRobot } from 'react-icons/fa';
+import { FaUserPlus } from 'react-icons/fa';
 
 const images = ['about1.jpeg', 'about2.jpeg', 'about3.jpg', 'about4.jpg','about5.jpg', 'about6.jpg', 'about11.jpg', 'about8.jpg', 'about9.jpg', 'about10.jpg', 'about12.jpg'];
 
