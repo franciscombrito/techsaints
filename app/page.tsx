@@ -8,21 +8,6 @@ import { Rocket, Laptop, Users, Wine, LayoutGrid, BrainCircuit, Cpu, Code2, Part
 
 const images = ['about1.jpeg', 'about_2.jpg', 'about_3.jpg', 'about_4.jpg', 'about_5.jpg', 'about_6.jpg', 'about_7.jpg', 'about_8.jpg', 'about_9.jpg', 'about_10.jpg', 'about_11.jpg', 'about_12.jpg', 'about_13.jpg', 'about_14.jpg', 'about_15.jpg', 'about_16.jpg', 'about_17.jpg', 'about_18.jpg', 'about_19.jpg', 'about_20.jpg', 'about_21.jpg'];
 
-const speakers = [
-  {
-    name: 'Sofia de la Colina',
-    img: 'speaker1.jpeg'
-  },
-  {
-    name: 'Oleksii Kuzmuk',
-    img: 'speaker2.jpeg'
-  },
-  {
-    name: 'Rostislav Kostenko',
-    img: 'speaker3.jpg'
-  }
-]
-
 export default function Home() {
 
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -461,11 +446,3 @@ export default function Home() {
   );
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function shuffleArray(array: any): Array<{ name: string; role: string; img: string }> {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
