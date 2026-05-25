@@ -2,7 +2,6 @@
 // pages/index.tsx
 import Head from 'next/head';
 import Image from 'next/image';
-import 'keen-slider/keen-slider.min.css';
 import { useEffect, useRef } from 'react';
 import { Rocket, Laptop, Users, Wine, LayoutGrid, BrainCircuit, Cpu, Code2, PartyPopper } from 'lucide-react';
 
@@ -364,11 +363,12 @@ export default function Home() {
           className="flex w-full overflow-x-scroll no-scrollbar scroll-smooth"
         >
           {images.map((img, i) => (
-            <div key={i} className="min-w-[40vw] h-[300px] flex-shrink-0">
-              <img
+            <div key={i} className="relative min-w-[40vw] h-[300px] flex-shrink-0">
+              <Image
                 src={`/${img}`}
                 alt={`Gallery ${i + 1}`}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
               />
             </div>
           ))}
@@ -389,11 +389,12 @@ export default function Home() {
               Stop by the wheel booth at lunch or after the talks - <strong>one spin per day</strong>, and plenty of surprises in store!
             </p>
           </div>
-          <div className="md:w-3/10">
-            <img
+          <div className="md:w-3/10 relative aspect-square">
+            <Image
               src="/logo_image.png"
               alt="Tech & Saints Wheel of Luck"
-              className="w-full rounded-3xl shadow-lg"
+              fill
+              className="object-contain rounded-3xl shadow-lg"
             />
           </div>
         </div>
@@ -405,10 +406,12 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-yellow-500 mb-6">
             Last Edition Sessions
           </h2>
-          <div className="w-full overflow-hidden">
-            <img
+          <div className="w-full overflow-hidden relative">
+            <Image
               src="/last_year.png"
               alt="Last Edition Sessions"
+              width={1200}
+              height={800}
               className="w-full h-auto"
             />
           </div>
