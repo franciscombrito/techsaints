@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useEffect, useRef } from 'react';
 import { Rocket, Laptop, Users, Wine, LayoutGrid, BrainCircuit, Cpu, Code2, PartyPopper } from 'lucide-react';
 
-const images = ['about1.jpeg', 'about_2.jpg', 'about_3.jpg', 'about_4.jpg', 'about_5.jpg', 'about_6.jpg', 'about_7.jpg', 'about_8.jpg', 'about_9.jpg', 'about_10.jpg', 'about_11.jpg', 'about_12.jpg', 'about_13.jpg', 'about_14.jpg', 'about_15.jpg', 'about_16.jpg', 'about_17.jpg', 'about_18.jpg', 'about_19.jpg', 'about_20.jpg', 'about_21.jpg'];
+const images = ['about1.jpeg', 'about_2.jpg', 'about_3.jpg', 'about_4.jpg', 'about_5.jpg', 'about_6.jpg', 'about_7.jpg', 'about_8.jpg', 'about_9.jpg', 'about_11.jpg', 'about_12.jpg', 'about_14.jpg', 'about_15.jpg', 'about_16.jpg', 'about_17.jpg', 'about_18.jpg', 'about_19.jpg', 'about_20.jpg', 'about_21.jpg'];
 
 export default function Home() {
 
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="absolute bottom-0 left-0 right-0 h-96 opacity-20 pointer-events-none">
           <Image src="/lisbon_bg.png" alt="" fill className="object-cover object-bottom" />
         </div>
-        <div className="relative max-w-6xl mx-auto px-6 md:flex md:items-center md:justify-between md:gap-x-16">
+        <div className="relative max-w-6xl mx-auto px-8 py-10 bg-white rounded-3xl shadow-xl border border-gray-200 md:flex md:items-center md:justify-between md:gap-x-16">
           <div className="md:w-3/5 mb-10 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
               At the Intersection of Culture and Technology
@@ -125,7 +125,7 @@ export default function Home() {
             <div className="flex-1 flex flex-col text-left px-6 pb-6 pt-0">
               <div className="flex gap-4">
                 <div className="flex flex-col items-center flex-shrink-0 w-10">
-                  <div style={{ width: 2, height: 24, backgroundColor: '#14C94F', opacity: 0.4 }} />
+                  <div style={{ width: 2, height: 48, backgroundColor: '#14C94F', opacity: 0.4 }} />
                   <div className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden" style={{ border: '2px solid #14C94F', backgroundColor: '#0d1b2e' }}>
                     <Rocket size={20} color="#14C94F" />
                   </div>
@@ -209,7 +209,7 @@ export default function Home() {
             <div className="flex-1 flex flex-col text-left px-6 pb-6 pt-0">
               <div className="flex gap-4">
                 <div className="flex flex-col items-center flex-shrink-0 w-10">
-                  <div style={{ width: 2, height: 24, backgroundColor: '#FFC400', opacity: 0.4 }} />
+                  <div style={{ width: 2, height: 48, backgroundColor: '#FFC400', opacity: 0.4 }} />
                   <div className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden" style={{ border: '2px solid #FFC400', backgroundColor: '#0d1b2e' }}>
                     <Users size={20} color="#FFC400" />
                   </div>
@@ -271,7 +271,7 @@ export default function Home() {
             <div className="flex-1 flex flex-col text-left px-6 pb-6 pt-0">
               <div className="flex gap-4">
                 <div className="flex flex-col items-center flex-shrink-0 w-10">
-                  <div style={{ width: 2, height: 24, backgroundColor: '#FF3B3B', opacity: 0.4 }} />
+                  <div style={{ width: 2, height: 48, backgroundColor: '#FF3B3B', opacity: 0.4 }} />
                   <div className="w-10 h-10 rounded-full flex items-center justify-center overflow-hidden" style={{ border: '2px solid #FF3B3B', backgroundColor: '#0d1b2e' }}>
                     <Cpu size={20} color="#FF3B3B" />
                   </div>
@@ -352,6 +352,14 @@ export default function Home() {
             </div>
             <p className="font-semibold">Rostislav Kostenko</p>
             <p className="text-xs text-gray-300">Senior Sitecore Engineer</p>
+          </div>
+          <div className="bg-[#112240] p-2 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_4.jpeg" alt="Marco António Silva" fill className="object-cover" />
+            </div>
+            <p className="font-semibold">Marco António Silva</p>
+            <p className="text-xs text-gray-300">National Innovation Officer</p>
+            <p className="text-sm text-gray-300">Microsoft</p>
           </div>
         </div>
       </section>
