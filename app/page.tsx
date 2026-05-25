@@ -131,7 +131,7 @@ export default function Home() {
                   </div>
                   <div style={{ width: 2, flexGrow: 1, backgroundColor: '#14C94F', opacity: 0.4 }} />
                 </div>
-                <div className="py-1 flex-1">
+                <div className="pt-12 pb-1 flex-1">
                   <p className="text-xs font-semibold" style={{ color: '#14C94F' }}>12:00 PM</p>
                   <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>Kick-off Session</p>
                 </div>
@@ -215,7 +215,7 @@ export default function Home() {
                   </div>
                   <div style={{ width: 2, flexGrow: 1, backgroundColor: '#FFC400', opacity: 0.4 }} />
                 </div>
-                <div className="py-1 flex-1">
+                <div className="pt-12 pb-1 flex-1">
                   <p className="text-xs font-semibold" style={{ color: '#FFC400' }}>2:00 PM - 2:30 PM</p>
                   <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>Diving Into Valtech Portugal</p>
                   <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>Meet our team and our projects</p>
@@ -277,7 +277,7 @@ export default function Home() {
                   </div>
                   <div style={{ width: 2, flexGrow: 1, backgroundColor: '#FF3B3B', opacity: 0.4 }} />
                 </div>
-                <div className="py-1 flex-1">
+                <div className="pt-12 pb-1 flex-1">
                   <p className="text-xs font-semibold" style={{ color: '#FF3B3B' }}>3:00 PM - 4:00 PM</p>
                   <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>Valtech One - Framework for AI Agentic Implementation</p>
                   <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>With Bruno Oliveira, Oleksii Kuzmuk and Rostislav Kostenko</p>
