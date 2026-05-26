@@ -91,7 +91,7 @@ export default function Home() {
               Welcome to the <strong>fourth edition</strong> of <strong>Tech & Saints Week</strong>, Valtech Portugal&apos;s unique celebration of what makes us who we are - passionate about technology, proud of our culture, and eager to share both.
             </p>
             <p className="mb-4">
-              This event brings together our community to <strong>share knowledge</strong>, <strong>showcase our work</strong>, and <strong>host top-tier speakers</strong> from around the tech world. But it&apos;s more than just a event - it&apos;s a celebration.
+              This event brings together our community to <strong>share knowledge</strong>, <strong>showcase our work</strong>, and <strong>host top-tier speakers </strong> from around the tech world. But it&apos;s more than just a event - it&apos;s a celebration.
             </p>
             <p className="mb-4">
               Held in <strong>June</strong>, during Lisbon&apos;s most vibrant season, Tech & Saints Week pays tribute to the beloved <strong>Santos Populares</strong> - Portugal&apos;s iconic street festival tradition. For an entire month, the city comes alive with music, lights, grilled sardines, colorful garlands, and the unmistakable energy of community spirit.
@@ -361,6 +361,22 @@ export default function Home() {
             <p className="text-xs text-gray-300">National Innovation Officer</p>
             <p className="text-sm text-gray-300">Microsoft</p>
           </div>
+                    <div className="bg-[#112240] p-2 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_5.jpg" alt="Bruno Oliveira" fill className="object-cover" />
+            </div>
+            <p className="font-semibold">Bruno Oliveira</p>
+            <p className="text-xs text-gray-300">Cloud Engineer</p>
+            <p className="text-sm text-gray-300">Valtech</p>
+          </div>
+                    <div className="bg-[#112240] p-2 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_6.jpg" alt="Samantha Campos" fill className="object-cover" />
+            </div>
+            <p className="font-semibold">Samantha Campos</p>
+            <p className="text-xs text-gray-300">Senior Experience Researcher</p>
+            <p className="text-sm text-gray-300">Valtech</p>
+          </div>
         </div>
       </section>
 
@@ -399,7 +415,7 @@ export default function Home() {
           </div>
           <div className="md:w-3/10 relative aspect-square">
             <Image
-              src="/logo_image.png"
+              src="/techsaintweekdays.png"
               alt="Tech & Saints Wheel of Luck"
               fill
               className="object-contain rounded-3xl shadow-lg"
