@@ -240,8 +240,8 @@ export default function Home() {
                 </div>
                 <div className="py-1 flex-1">
                   <p className="text-xs font-semibold" style={{ color: '#FFC400' }}>4:00 PM - 5:00 PM</p>
-                  <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>Microsoft Talk</p>
-                  <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>(TBD)</p>
+                  <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>Drasi- A New Take on Change-Driven Architectures</p>
+                  <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>Allen Jones and Nandita Valsan</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -258,8 +258,8 @@ export default function Home() {
                 </div>
                 <div className="py-1">
                   <p className="text-xs font-semibold" style={{ color: '#FFC400' }}>5:00 PM - 6:00 PM</p>
-                  <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>AI Session (TBD)</p>
-                  <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>(TBD)</p>
+                  <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>Even S(AI)nts Have AI in Their Name</p>
+                  <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>Joana Cruz and Luísa Santos</p>
                 </div>
               </div>
             </div>
@@ -371,13 +371,45 @@ export default function Home() {
             <p className="text-xs text-gray-300">Cloud Engineer</p>
             <p className="text-sm text-gray-300">Valtech</p>
           </div>
-                    <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_6.jpg" alt="Samantha Campos" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Samantha Campos</p>
             <p className="text-xs text-gray-300">Senior Experience Researcher</p>
             <p className="text-sm text-gray-300">Valtech</p>
+          </div>
+          <div className="bg-[#112240] p-2 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_7.png" alt="Joana Cruz" fill sizes="96px" className="object-cover" />
+            </div>
+            <p className="font-semibold">Joana Cruz</p>
+            <p className="text-xs text-gray-300">Head of Business Operations</p>
+            <p className="text-sm text-gray-300">Valtech</p>
+          </div>
+          <div className="bg-[#112240] p-2 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_8.png" alt="Luísa Santos" fill sizes="96px" className="object-cover" />
+            </div>
+            <p className="font-semibold">Luísa Santos</p>
+            <p className="text-xs text-gray-300">Care Manage</p>
+            <p className="text-sm text-gray-300">Valtech</p>
+          </div>
+          <div className="bg-[#112240] p-2 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_9.jpg" alt="Nandita Valsan" fill sizes="96px" className="object-cover" />
+            </div>
+            <p className="font-semibold">Nandita Valsan</p>
+            <p className="text-xs text-gray-300">Principal Product Manager</p>
+            <p className="text-sm text-gray-300">Microsoft</p>
+          </div>
+          <div className="bg-[#112240] p-2 rounded-xl">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_10.jpg" alt="Allen Jones" fill sizes="96px" className="object-cover" />
+            </div>
+            <p className="font-semibold">Allen Jones</p>
+            <p className="text-xs text-gray-300">Principal Software Engineer</p>
+            <p className="text-sm text-gray-300">Microsoft</p>
           </div>
         </div>
       </section>
@@ -423,9 +455,10 @@ export default function Home() {
               <ul className="space-y-3">
                 {[
                   { label: 'Attendance', pts: '+5 pts' },
-                  { label: 'Interaction during the session (questions, polls, etc.)', pts: '+3 pts' },
-                  { label: 'Posting a takeaway in Teams', pts: '+3 pts' },
-                  { label: 'Speaker / organiser contribution', pts: '+2 pts' },
+                  { label: 'Speaker / organiser contribution', pts: '+3 pts' },
+                  { label: 'Interaction during the session (questions, polls, etc.)', pts: '+2 pts' },
+                  { label: 'Posting a takeaway in Teams', pts: '+2 pts' },
+
                 ].map(({ label, pts }) => (
                   <li key={label} className="flex items-start justify-between gap-4">
                     <span className="text-gray-300 text-sm">{label}</span>
@@ -467,7 +500,7 @@ export default function Home() {
                     <span className="text-2xl">🥈</span>
                     <div>
                       <p className="font-black text-white text-sm">2nd Place</p>
-                      <p className="text-green-400 text-sm font-semibold">75€ voucher</p>
+                      <p className="text-green-400 text-sm font-semibold">50€ voucher</p>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
