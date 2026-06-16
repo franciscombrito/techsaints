@@ -49,6 +49,7 @@ export default function Home() {
           alt="Tech and Saints Week Hero"
           fill
           priority
+          sizes="100vw"
           className="object-cover z-0"
         />
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-between pt-[22vh] pb-[5vh] px-4">
@@ -80,7 +81,7 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="relative w-full pt-20 pb-20 bg-white text-gray-900 overflow-hidden">
         <div className="absolute bottom-0 left-0 right-0 h-96 opacity-20 pointer-events-none">
-          <Image src="/lisbon_bg.png" alt="" fill className="object-cover object-bottom" />
+          <Image src="/lisbon_bg.png" alt="" fill sizes="100vw" className="object-cover object-bottom" />
         </div>
         <div className="relative max-w-6xl mx-auto px-8 py-10 bg-white rounded-3xl shadow-xl border border-gray-200 md:flex md:items-center md:justify-between md:gap-x-16">
           <div className="md:w-3/5 mb-10 md:mb-0">
@@ -106,6 +107,7 @@ export default function Home() {
                 src="/about1.jpeg"
                 alt="Santos Populares festival in Lisbon"
                 fill
+                sizes="(max-width: 768px) 100vw, 40vw"
                 className="object-cover"
               />
             </div>
@@ -333,7 +335,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-4 gap-6">
           <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
-              <Image src="/speaker_2.jpg" alt="Sofia de la Colina" fill className="object-cover" />
+              <Image src="/speaker_2.jpg" alt="Sofia de la Colina" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Sofia de la Colina</p>
             <p className="text-xs text-gray-300">Group Diversity and Inclusion Lead</p>
@@ -341,21 +343,21 @@ export default function Home() {
           </div>
           <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
-              <Image src="/speaker_1.jpg" alt="Oleksii Kuzmuk" fill className="object-cover" />
+              <Image src="/speaker_1.jpg" alt="Oleksii Kuzmuk" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Oleksii Kuzmuk</p>
             <p className="text-xs text-gray-300">Director of Technology, MACH</p>
           </div>
           <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
-              <Image src="/speaker_3.jpg" alt="Rostislav Kostenko" fill className="object-cover" />
+              <Image src="/speaker_3.jpg" alt="Rostislav Kostenko" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Rostislav Kostenko</p>
             <p className="text-xs text-gray-300">Senior Sitecore Engineer</p>
           </div>
           <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
-              <Image src="/speaker_4.jpeg" alt="Marco António Silva" fill className="object-cover" />
+              <Image src="/speaker_4.jpeg" alt="Marco António Silva" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Marco António Silva</p>
             <p className="text-xs text-gray-300">National Innovation Officer</p>
@@ -363,7 +365,7 @@ export default function Home() {
           </div>
                     <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
-              <Image src="/speaker_5.jpg" alt="Bruno Oliveira" fill className="object-cover" />
+              <Image src="/speaker_5.jpg" alt="Bruno Oliveira" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Bruno Oliveira</p>
             <p className="text-xs text-gray-300">Cloud Engineer</p>
@@ -371,7 +373,7 @@ export default function Home() {
           </div>
                     <div className="bg-[#112240] p-2 rounded-xl">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
-              <Image src="/speaker_6.jpg" alt="Samantha Campos" fill className="object-cover" />
+              <Image src="/speaker_6.jpg" alt="Samantha Campos" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Samantha Campos</p>
             <p className="text-xs text-gray-300">Senior Experience Researcher</p>
@@ -392,6 +394,7 @@ export default function Home() {
                 src={`/${img}`}
                 alt={`Gallery ${i + 1}`}
                 fill
+                sizes="40vw"
                 className="object-cover"
               />
             </div>
@@ -399,27 +402,86 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Wheel of Luck Section */}
-      <section id="lucky-circuit" className="w-full bg-black text-white relative">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center md:items-start gap-12 py-20">
-          <div className="md:w-7/10 text-center md:text-left">
-            <h2 className="text-4xl font-bold text-yellow-400 mb-4">
-              Saints Wheel of Luck
-            </h2>
-            <p className="text-lg mb-6">
-              Every day during <strong>Tech & Saints Week</strong>, get your chance to spin our Saints & Tech-inspired Wheel of Luck!
+      {/* Engagement Podium Section */}
+      <section id="podium" className="w-full bg-[#0a192f] text-white py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+
+          {/* Header */}
+          <div className="text-center mb-14">
+            <h2 className="text-4xl font-bold text-yellow-400 mb-3">🏆 Tech &amp; Saints Engagement Podium</h2>
+            <p className="text-gray-300 text-lg max-w-2xl mx-auto">
+              This year, Tech &amp; Saints introduces a <strong className="text-white">Podium Challenge</strong> to reward participation, engagement, and learning throughout the week.
             </p>
-            <p className="text-md text-gray-300 mb-6">
-              Stop by the wheel booth at lunch or after the talks - <strong>one spin per day</strong>, and plenty of surprises in store!
-            </p>
+            <p className="text-gray-400 mt-2">Participants will earn points by attending and actively engaging in sessions. The <strong className="text-white">top 3</strong> will win prizes.</p>
           </div>
-          <div className="md:w-3/10 relative aspect-square">
-            <Image
-              src="/techsaintweekdays.png"
-              alt="Tech & Saints Wheel of Luck"
-              fill
-              className="object-contain rounded-3xl shadow-lg"
-            />
+
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
+
+            {/* Points System */}
+            <div className="rounded-2xl p-6" style={{ backgroundColor: '#0d1b2e', border: '1px solid #FFC400' }}>
+              <h3 className="text-xl font-black text-yellow-400 mb-4">🎯 Points System</h3>
+              <ul className="space-y-3">
+                {[
+                  { label: 'Attendance', pts: '+5 pts' },
+                  { label: 'Interaction during the session (questions, polls, etc.)', pts: '+3 pts' },
+                  { label: 'Posting a takeaway in Teams', pts: '+3 pts' },
+                  { label: 'Speaker / organiser contribution', pts: '+2 pts' },
+                ].map(({ label, pts }) => (
+                  <li key={label} className="flex items-start justify-between gap-4">
+                    <span className="text-gray-300 text-sm">{label}</span>
+                    <span className="text-yellow-400 font-black text-sm whitespace-nowrap">{pts}</span>
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-5 pt-4" style={{ borderTop: '1px solid rgba(255,196,0,0.2)' }}>
+                <p className="text-sm text-gray-400">🎲 <strong className="text-white">Random Surprise Boost</strong> — Stay tuned for special announcements to earn extra points!</p>
+              </div>
+            </div>
+
+            {/* Attendance & Prizes stacked */}
+            <div className="flex flex-col gap-8">
+
+              {/* Attendance */}
+              <div className="rounded-2xl p-6 flex-1" style={{ backgroundColor: '#0d1b2e', border: '1px solid #1877FF' }}>
+                <h3 className="text-xl font-black mb-3" style={{ color: '#1877FF' }}>✅ Attendance &amp; Validation</h3>
+                <ul className="space-y-2 text-sm text-gray-300">
+                  <li>A <strong className="text-white">code will be shared during each session</strong></li>
+                  <li>At the end of each day, submit a <strong className="text-white">form with the codes collected</strong></li>
+                  <li>Only validated submissions will count towards points</li>
+                </ul>
+                <p className="mt-4 text-xs text-gray-500">🚫 <em>Wine &amp; Yoga session is excluded (office only)</em></p>
+              </div>
+
+              {/* Prizes */}
+              <div className="rounded-2xl p-6" style={{ backgroundColor: '#0d1b2e', border: '1px solid #14C94F' }}>
+                <h3 className="text-xl font-black text-green-400 mb-4">🎁 Prizes</h3>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">🥇</span>
+                    <div>
+                      <p className="font-black text-white text-sm">1st Place</p>
+                      <p className="text-green-400 text-sm font-semibold">100€ voucher</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">🥈</span>
+                    <div>
+                      <p className="font-black text-white text-sm">2nd Place</p>
+                      <p className="text-green-400 text-sm font-semibold">75€ voucher</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">🥉</span>
+                    <div>
+                      <p className="font-black text-white text-sm">3rd Place</p>
+                      <p className="text-green-400 text-sm font-semibold">25€ voucher</p>
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4 text-xs text-gray-400">📅 Winners announced in a <strong className="text-white">live call on 30 June</strong></p>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
