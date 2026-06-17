@@ -80,10 +80,10 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="relative w-full pt-20 pb-20 bg-white text-gray-900 overflow-hidden">
-        <div className="absolute bottom-0 left-0 right-0 h-96 opacity-20 pointer-events-none">
-          <Image src="/lisbon_bg.png" alt="" fill sizes="100vw" className="object-cover object-bottom" />
+        <div className="absolute inset-0 opacity-60 pointer-events-none">
+          <Image src="/lisbon_bg.png" alt="" fill sizes="100vw" className="object-contain object-bottom" />
         </div>
-        <div className="relative max-w-6xl mx-auto px-8 py-10 bg-white rounded-3xl shadow-xl border border-gray-200 md:flex md:items-center md:justify-between md:gap-x-16">
+        <div className="relative max-w-6xl mx-auto px-8 py-10 md:flex md:items-center md:justify-between md:gap-x-16">
           <div className="md:w-3/5 mb-10 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
               At the Intersection of Culture and Technology
@@ -157,7 +157,7 @@ export default function Home() {
                   <p className="text-xs font-semibold" style={{ color: '#14C94F' }}>2:00 PM - 2:30 PM</p>
                   <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>PULSO</p>
                   <p className="text-xs mt-1 leading-5" style={{ color: '#9ca3af' }}>
-                    Practical<br />Ergonomics<br />Exercises (remote)
+                    Practical Ergonomics Exercises (remote)
                   </p>
                 </div>
               </div>
@@ -241,7 +241,7 @@ export default function Home() {
                 <div className="py-1 flex-1">
                   <p className="text-xs font-semibold" style={{ color: '#FFC400' }}>4:00 PM - 5:00 PM</p>
                   <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>Drasi- A New Take on Change-Driven Architectures</p>
-                  <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>Allen Jones and Nandita Valsan</p>
+                  <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>With Allen Jones and Nandita Valsan</p>
                 </div>
               </div>
               <div className="flex items-center">
@@ -259,7 +259,7 @@ export default function Home() {
                 <div className="py-1">
                   <p className="text-xs font-semibold" style={{ color: '#FFC400' }}>5:00 PM - 6:00 PM</p>
                   <p className="font-black text-sm uppercase leading-tight" style={{ color: '#ffffff' }}>Even S(AI)nts Have AI in Their Name</p>
-                  <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>Joana Cruz and Luísa Santos</p>
+                  <p className="text-xs mt-1" style={{ color: '#9ca3af' }}>With Joana Cruz and Luísa Santos</p>
                 </div>
               </div>
             </div>
@@ -395,7 +395,7 @@ export default function Home() {
             <p className="text-xs text-gray-300">Care Manage</p>
             <p className="text-sm text-gray-300">Valtech</p>
           </div>
-          <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl md:col-start-2">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_9.jpg" alt="Nandita Valsan" fill sizes="96px" className="object-cover" />
             </div>
