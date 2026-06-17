@@ -80,10 +80,10 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="relative w-full pt-20 pb-20 bg-white text-gray-900 overflow-hidden">
-        <div className="absolute inset-0 opacity-60 pointer-events-none">
-          <Image src="/lisbon_bg.png" alt="" fill sizes="100vw" className="object-contain object-bottom" />
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <Image src="/lisbon_bg.png" alt="" fill sizes="100vw" className="object-cover" />
         </div>
-        <div className="relative max-w-6xl mx-auto px-8 py-10 md:flex md:items-center md:justify-between md:gap-x-16">
+        <div className="relative max-w-6xl mx-auto px-8 py-10 bg-white rounded-3xl shadow-xl border border-gray-200 md:flex md:items-center md:justify-between md:gap-x-16">
           <div className="md:w-3/5 mb-10 md:mb-0">
             <h2 className="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">
               At the Intersection of Culture and Technology
