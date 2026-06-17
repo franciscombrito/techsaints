@@ -332,8 +332,8 @@ export default function Home() {
       {/* Speakers Section */}
       <section id="speakers" className="py-10 px-6 text-center bg-[#0a192f]">
         <h2 className="text-3xl font-bold mb-8 text-yellow-400">SPEAKERS</h2>
-        <div className="max-w-5xl mx-auto grid md:grid-cols-4 gap-6">
-          <div className="bg-[#112240] p-2 rounded-xl">
+        <div className="max-w-5xl mx-auto flex flex-wrap justify-center gap-6">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_2.jpg" alt="Sofia de la Colina" fill sizes="96px" className="object-cover" />
             </div>
@@ -341,21 +341,21 @@ export default function Home() {
             <p className="text-xs text-gray-300">Group Diversity and Inclusion Lead</p>
             <p className="text-sm text-gray-300">Valtech</p>
           </div>
-          <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_1.jpg" alt="Oleksii Kuzmuk" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Oleksii Kuzmuk</p>
             <p className="text-xs text-gray-300">Director of Technology, MACH</p>
           </div>
-          <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_3.jpg" alt="Rostislav Kostenko" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Rostislav Kostenko</p>
             <p className="text-xs text-gray-300">Senior Sitecore Engineer</p>
           </div>
-          <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_4.jpeg" alt="Marco António Silva" fill sizes="96px" className="object-cover" />
             </div>
@@ -363,7 +363,7 @@ export default function Home() {
             <p className="text-xs text-gray-300">National Innovation Officer</p>
             <p className="text-sm text-gray-300">Microsoft</p>
           </div>
-                    <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_5.jpg" alt="Bruno Oliveira" fill sizes="96px" className="object-cover" />
             </div>
@@ -371,7 +371,7 @@ export default function Home() {
             <p className="text-xs text-gray-300">Cloud Engineer</p>
             <p className="text-sm text-gray-300">Valtech</p>
           </div>
-          <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_6.jpg" alt="Samantha Campos" fill sizes="96px" className="object-cover" />
             </div>
@@ -379,7 +379,7 @@ export default function Home() {
             <p className="text-xs text-gray-300">Senior Experience Researcher</p>
             <p className="text-sm text-gray-300">Valtech</p>
           </div>
-          <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_7.png" alt="Joana Cruz" fill sizes="96px" className="object-cover" />
             </div>
@@ -387,7 +387,7 @@ export default function Home() {
             <p className="text-xs text-gray-300">Head of Business Operations</p>
             <p className="text-sm text-gray-300">Valtech</p>
           </div>
-          <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_8.png" alt="Luísa Santos" fill sizes="96px" className="object-cover" />
             </div>
@@ -395,7 +395,7 @@ export default function Home() {
             <p className="text-xs text-gray-300">Care Manage</p>
             <p className="text-sm text-gray-300">Valtech</p>
           </div>
-          <div className="bg-[#112240] p-2 rounded-xl md:col-start-2">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_9.jpg" alt="Nandita Valsan" fill sizes="96px" className="object-cover" />
             </div>
@@ -403,13 +403,37 @@ export default function Home() {
             <p className="text-xs text-gray-300">Principal Product Manager</p>
             <p className="text-sm text-gray-300">Microsoft</p>
           </div>
-          <div className="bg-[#112240] p-2 rounded-xl">
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
             <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
               <Image src="/speaker_10.jpg" alt="Allen Jones" fill sizes="96px" className="object-cover" />
             </div>
             <p className="font-semibold">Allen Jones</p>
             <p className="text-xs text-gray-300">Principal Software Engineer</p>
             <p className="text-sm text-gray-300">Microsoft</p>
+          </div>
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_11.jpg" alt="João Campos" fill sizes="96px" className="object-cover" />
+            </div>
+            <p className="font-semibold">João Campos</p>
+            <p className="text-xs text-gray-300">Senior Product Designer</p>
+            <p className="text-sm text-gray-300">Valtech</p>
+          </div>
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_12.jpg" alt="Naiche Nardi" fill sizes="96px" className="object-cover" />
+            </div>
+            <p className="font-semibold">Naiche Nardi</p>
+            <p className="text-xs text-gray-300">Senior Java Engineer</p>
+            <p className="text-sm text-gray-300">Valtech</p>
+          </div>
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_13.png" alt="Leandro Nunes" fill sizes="96px" className="object-cover" />
+            </div>
+            <p className="font-semibold">Leandro Nunes</p>
+            <p className="text-xs text-gray-300">Senior SAP Commerce Engineer</p>
+            <p className="text-sm text-gray-300">Valtech</p>
           </div>
         </div>
       </section>
