@@ -435,6 +435,14 @@ export default function Home() {
             <p className="text-xs text-gray-300">Senior SAP Commerce Engineer</p>
             <p className="text-sm text-gray-300">Valtech</p>
           </div>
+          <div className="bg-[#112240] p-2 rounded-xl w-full md:w-[calc(25%-18px)] shrink-0">
+            <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 relative">
+              <Image src="/speaker_14.png" alt="Héctor Gordín" fill sizes="96px" className="object-cover" />
+            </div>
+            <p className="font-semibold">Héctor Gordín</p>
+            <p className="text-xs text-gray-300">Lead Flutter Developer</p>
+            <p className="text-sm text-gray-300">Valtech</p>
+          </div>
         </div>
       </section>
 
